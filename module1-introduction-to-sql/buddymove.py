@@ -14,7 +14,7 @@ labels = ['user_id','sports','religious','nature','theatre','shopping','picnic']
 # had to remove header then add column names with no spaces and lowecase for ease of acces
 # labels with white speces give error in sql query
 df = pandas.read_csv('/home/terrence/Documents/DS-Unit-3-Sprint-2-SQL-and-Databases/module1-introduction-to-sql/buddymove_holidayiq.csv',header=0, names=labels)
-df.to_sql('Buddy_works', con=connection, if_exists='append')
+df.to_sql('Buddy_works', con=connection, if_exists='append', index=False)
 
 # queries
 query = 'SELECT COUNT(DISTINCT user_id) AS count FROM Buddy_works'
