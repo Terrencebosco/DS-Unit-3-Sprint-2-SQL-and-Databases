@@ -44,5 +44,5 @@ collection.insert_one({
 print("DOCS:", collection.count_documents({})) #empty dict to count. enter filters in {}.
 print(collection.count_documents({"name": "Pikachu"}))
 
-for doc in collection.find("column_name":{peram '$gt':number}):
-    print(doc)
+# for doc in collection.find("column_name":{peram '$gt':number}):
+#     print(doc)
