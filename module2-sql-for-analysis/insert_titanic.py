@@ -98,6 +98,11 @@ with open('/home/terrence/Documents/DS-Unit-3-Sprint-2-SQL-and-Databases/module2
         )
 connection2.commit()
 
+#--------------------------------------------------------
+
+with open('titanic.csv', 'r') as f:
+    next(f)
+    cursor.copy_from(f, 'titanic', sep=",")
 # ------------------------------------------------------
 
 # always close at the end
