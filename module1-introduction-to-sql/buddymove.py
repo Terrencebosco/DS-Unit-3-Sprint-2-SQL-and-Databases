@@ -3,7 +3,7 @@ import sqlite3
 import os
 
 # file path
-DB_FILEPATH = os.path.join(os.path.dirname(__file__), "buddymove_holidayiq.splite3")
+DB_FILEPATH = os.path.join(os.path.dirname(__file__), "buddymove_holidayiq.sqlite3")
 
 # connection
 connection = sqlite3.connect(DB_FILEPATH)
